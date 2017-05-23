@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/3df66f9a27.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Button to open the modal login form -->
+    <button class="buttonLoginModal">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modalLogin closeModal">
+        <span id="crux" class="close" title="<Cl></Cl>ose Modal"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+
+            <h3>Login User</h3>
+
+            <div class="containerLogin">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="nombre" required>
+                <br/>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="button" class="buttonLogin" id="loginbtn">Login</button>
+                <span>No estas registrado?<a href="registro.php"> Hazlo</a></span>
+            </div>
+
+            <div class="containerLogin" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a class="item" href="javascript:void(0)" class="closebtn"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+        <a class="item" href="index.html">Inicio</a>
+        <a class="item" href="permutacion.html">Permutaciones</a>
+        <a class="item" href="combinacion.html">Combinaciones</a>
+        <a class="item" href="datos_agrupados.html">Datos Agrupados</a>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="navbar">
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+            </div>
+            <h1 id="title">Temas de Probabilidad</h1>
+            <h2 id="author">By Ramiro Solis</h2>
+        </div>
+        <div class="container">
+            <div class="header">
+                <span class="title">Datos Agrupados</span>
+            </div>
+            <div class="content">
+                <form>
+                    <h3 id="legend">Introducir Datos:</h3>
+                    <div class="dropdown">
+                        <input type="button" class="dropbtn" value="Medidad de T.C. y de Dispersion" />
+                        <div class="dropdown-content">
+                            <a href="#" class="formula">Media</a>
+                            <a href="#" class="formula">Mediana</a>
+                            <a href="#" class="formula">Moda</a>
+                            <a href="#" class="formula">Varianza</a>
+                            <a href="#" class="formula">Desviacion Estandar</a>
+                        </div>
+                    </div>
+                    <textarea name="data" id="data" cols="27" rows="5" placeholder="d1,d2,d3,... dN"></textarea>
+                    <br />
+                    <input type="button" value="Crear Tabla" id="createTable" class="boton" />
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Intervalos</th>
+                            <th>f</th>
+                            <th>Mc</th>
+                            <th>Fr</th>
+                            <th>Fa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

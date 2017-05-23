@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/3df66f9a27.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <button class="buttonLoginModal">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modalLogin closeModal">
+        <span id="crux" class="close" title="<Cl></Cl>ose Modal"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+
+            <h3>Login User</h3>
+
+            <div class="containerLogin">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="nombre" required>
+                <br/>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="button" class="buttonLogin" id="loginbtn">Login</button>
+                <span>No estas registrado?<a href="registro.php"> Hazlo</a></span>
+            </div>
+
+            <div class="containerLogin" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+        <a href="index.html">Inicio</a>
+        <a href="permutacion.html">Permutaciones</a>
+        <a href="combinacion.html">Combinaciones</a>
+        <a href="datos_agrupados.html">Datos Agrupados</a>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="navbar">
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+            </div>
+            <h1 id="title">Temas de Probabilidad</h1>
+            <h2 id="author">By Ramiro Solis</h2>
+        </div>
+        <div class="container">
+            <div class="header">
+                <span class="title">Combinaciones</span>
+            </div>
+            <div class="content">
+                <input type="button" id="calcular-combinacion" class="boton" value="Calcular" />
+                <br />
+                <input type="number" placeholder="n-elementos" class="elements" />
+                <span class="letter">C</span>
+                <input type="number" placeholder="r-elementos" class="elements" />
+                <br />
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga|Pacifico|Orbitron|Crete+Round');
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Righteous');
+/* Full-width input fields */
+.modalRegister{
+    margin-top: 75px;
+    width: 1000px;
+}
+.closeModal{
+     display: none;
+}
+.open{
+    display: block;
+}
+div.containerLogin input{
+    width: auto;
+    padding: 12px 25px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+.buttonLogin, .buttonLoginModal{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.buttonLoginModal{
+    width: auto;
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.buttonLogin:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    border-radius: 5px;
+    background-color: #f44336;
+}
+
+.containerLogin{
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modalLogin{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    padding-top: 60px; 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.dropdown-content a:hover:first-child, .dropdown-content a:hover:last-child{
+    border-radius: 5px;    
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 100px;
+    right: 280px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1     ;
+}
+.dropdown-content a:active{
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    font-size: 45px;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    font-family: 'Righteous', cursive;
+}
+table{
+    margin: auto;
+    margin-top: 45px;
+    width: 100%;
+}
+#createTable{
+    margin-top: 50px;
+    width: 1000px;
+    font-size: 35px;
+}
+textarea{
+    margin-top: 10px;  
+    margin-right: 12%;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+textarea:focus{
+    outline: none;
+}
+textarea::-webkit-input-placeholder{
+    color: white;
+}
+#legend{
+    display: inline-block;
+    float: left;
+    padding-top: 20px;
+    padding-left: 100px;
+    color: aliceblue;
+    font-size: 45px;
+    
+}
+#result{
+    display: none;
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+}
+div.elements{
+    margin: 0% 14% 0% 0%;
+}
+div.no-elements{
+    margin: 0px;
+}
+input.element{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+.boton{
+    background-color: transparent;
+    border: 5px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.boton:focus{
+    outline: none;
+}
+.boton:hover{
+    background-color: black;
+}
+.letter{
+     font-size: 100px;
+     margin-top: 5px;
+}
+select{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+@keyframes slide{
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
+body{
+    background-color: rgb(255,33,0);
+}
+#arrow{
+    position: absolute;
+    width: 0%;
+    right: 82%;
+    top: 10px;
+    transition: 0.5s;
+    
+}
+.rotate-up{
+    transform: rotate(25deg);
+}
+.rotate-down{
+    transform: rotate(-35deg);
+}
+#title, #author{
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+#title{
+    font-family: 'Orbitron', sans-serif;
+}
+#author{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#navbar{
+    overflow: hidden;  
+    float: left;
+    margin-left: 10px;
+    margin-top: -5px
+}
+#navbar:hover{
+    cursor: pointer;
+}
+.menuIcon{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+}
+#title{
+    float: none;
+}
+#header{
+    text-align: center;
+    height: 100px;
+    color: white;
+    padding: 3%;
+    background: repeating-linear-gradient(-45deg,red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);     
+	background-size:600vw 600vw;
+	-webkit-animation:'slide' 10s infinite linear forwards;
+    border-radius: 5px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(114,16,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;   
+    font-family: 'Ranga', cursive;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.sidenav a:hover, a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.container{
+    text-align: center;
+}
+.title{
+    font-family: 'Ranga', cursive;
+    font-size: 50px;
+}
+p{
+    text-align: justify;
+    margin: 0px;
+    font-family: 'Crete Round', serif;
+    font-size: 20px;
+}
+.header{
+    background-color: rgb(204,54,0);
+    margin-top: 10px;
+    border: 1px solid rgb(180,48,0);
+    border-bottom: none;
+}
+.content{
+    border: 1px solid rgb(180,48,0);
+    border-top: none;
+    position: relative;
+}
+img{
+    width: 300px;
+}
+#window{
+    bottom: 150px;
+    left: 180px;
+    transform: rotate(-30deg);
+    height: 30%;
+    width: 0;
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family:font-family: 'Crete Round', serif;
+}
+#window p{
+    font-size: 40px;
+}
+#myModal{
+    top: 200px;
+    right: 30%;
+    overflow: hidden;    
+}
+.modal-header, .modal-body, .modal-footer{
+    background-color: rgb(66,7,7);
+    color: aliceblue;
+}

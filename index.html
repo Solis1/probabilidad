@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/3df66f9a27.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <button class="buttonLoginModal">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modalLogin closeModal">
+        <span id="crux" class="close" title="<Cl></Cl>ose Modal"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+
+            <h3>Login User</h3>
+
+            <div class="containerLogin">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="nombre" required>
+                <br/>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="button" class="buttonLogin" id="loginbtn">Login</button>
+                <span>No estas registrado?<a href="registro.php"> Hazlo</a></span>
+            </div>
+
+            <div class="containerLogin" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+        <a href="index.html">Inicio</a>
+        <a href="permutacion.html">Permutaciones</a>
+        <a href="combinacion.html">Combinaciones</a>
+        <a href="datos_agrupados.html">Datos Agrupados</a>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div id="navbar">
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+                <div class="menuIcon"></div>
+            </div>
+            <h1 id="title">Temas de Probabilidad</h1>
+            <h2 id="author">By Ramiro Solis</h2>
+            <img id="arrow" class="rotate-up" src="img/arrow.png" />
+        </div>
+        <div class="container">
+            <div class="header">
+                <span class="title">Bienvenido</span>
+            </div>
+            <div class="content">
+                <p>En esta pagina podras encontrar algunos temas referentes con la materia de Probabilidad y Estadistica, como: Datos Agrupados, permutaciones, combinaciones, formulas para variables continuas y variables discretas. Esta página forma parte de un pequeño proyecto desarrollado por rookies programadores. Esperemos que te sea de utilidad <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+                <a id="riseModal" href="#" data-toggle="modal" data-target="#myModal">
+                    <img id="loading" src="img/oie_2604898uEFRw9L%20(3).gif" alt="error">
+                </a>
+                <div id="window">
+                    <p style="color:white;">Haz click sobre mi!<br /><i class="fa fa-hand-o-right" aria-hidden="true"></i></p>
+                </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Probabilidad y Estadistica</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>La Probabilidad es un valor entro uno y cero, inclusive que describe la posibilidad relativa de que ocurra un evento y en el caso de la estadística es comúnmente considerada como una colección de hechos numéricos expresados en términos de una relación sumisa, y que han sido recopilados a partir de otros datos numéricos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
